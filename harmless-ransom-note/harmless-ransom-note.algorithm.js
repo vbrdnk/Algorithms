@@ -4,7 +4,9 @@ function harmlessRansomNote(noteText, magazineText) {
 	let magazineObj = {};
 
 	magazineArr.forEach(word => {
-		if (!magazineObj[word]) magazineObj[word] = 0;
+		if (!magazineObj[word]) {
+			magazineObj[word] = 0;
+		}
 		magazineObj[word]++;
 	});
 
@@ -12,14 +14,18 @@ function harmlessRansomNote(noteText, magazineText) {
 	noteArr.forEach(word => {
 		if (magazineObj[word]) {
 			magazineObj[word]--;
-			if (magazineObj[word] < 0) noteIsPossible = false;
-		} else noteIsPossible = false;
+			if (magazineObj[word] < 0) { 
+				noteIsPossible = false;
+			}
+		} else { 
+			noteIsPossible = false;
+		}
 	});
 
 	return noteIsPossible;
 }
 
-console.log(harmlessRansomNote('this is all', 'this is all the magazine text in the magazine'));
+console.log(harmlessRansomNote('this is secret', 'this is all the magazine text in the magazine'));
 console.log(harmlessRansomNote('this is a secret note for you from a secret admirer',
 	'puerto rico is a place of great wonder and excitement it has many secret waterfall ' +
 	'locatoins that i am an admirer of you must hike quite a distance to find the secret ' +
