@@ -1,0 +1,23 @@
+{
+  "name": "algorithms-in-javascript",
+  "version": "1.0.0",
+  "description": "JavaScript implementation of most popular algorithms for sorting and manipulating data structures",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbrdnk/Algorithms-in-JavaScript.git"
+  },
+  "keywords": [
+    "algorithms",
+    "javascript"
+  ],
+  "author": "Vladyslav Burdeniuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vbrdnk/Algorithms-in-JavaScript/issues"
+  },
+  "homepage": "https://github.com/vbrdnk/Algorithms-in-JavaScript#readme"
+}
