@@ -30,7 +30,7 @@ function merge(array1, array2) {
     }
 
     return result;
-} 
+}
 
 console.log(mergeSort([4, 2, 3, 1]));
 console.log(mergeSort([10, 2, 33, 11, 15, 3, 45, 2, 4, 7, 89]));
